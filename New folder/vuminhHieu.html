@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="vuminhHieu.js"></script>
+</head>
+<body>
+<!--Bài 1-->
+<label for="text1">Bài 1</label><br>
+<input type="text" id="text1" placeholder="Tính độ dài chuỗi bài 1">
+<button type="button" onclick="length()">Click</button>
+<P>Result: <span id="result1"></span></P>
+
+<br>
+<br>
+
+<!--Bài 4-->
+<label for="firstnumber">Bài 4</label><br>
+<input type="number" id="firstnumber" placeholder="Enter first number"><br>
+<input type="number" id="secondnumber" placeholder="Enter first second">
+<button type="button" onclick="caculator(this.innerHTML)">+</button>
+<button type="button" onclick="caculator(this.innerHTML)">-</button>
+<button type="button" onclick="caculator(this.innerHTML)">x</button>
+<button type="button" onclick="caculator(this.innerHTML)">/</button>
+<br>
+<P>Result: <span id="result2"></span></P>
+
+<br>
+<br>
+
+<!--Bài 6-->
+<label for="hello">Bài 6</label><br>
+<input type="text" id="hello" placeholder="Nhập tên" onchange="hiHello(this.value)">
+
+<br>
+<br>
+<br>
+
+<!--Bài 7:-->
+<label for="num">Bài 7</label><br>
+<input type="text" id="num" placeholder="Nhập phần tử">
+<button type="button" onclick="addNumber(this.value)">Click</button>
+<br>
+<p>b [<span id="numorword"></span>]</p>
+
+<br>
+<br>
+<br>
+
+<!--Bài 8:-->
+<label for="num1">Bài 8</label><br>
+<input type="text" id="num1" placeholder="Nhập vị trí phần tử cần xóa">
+<button type="button" onclick="deleteNumber(this.value)">Click</button>
+<br>
+<p>b [3,2,4,1,5,"hello","chuối"]</p>
+<p>b [<span id="wordorNum"></span>]</p>
+
+<br>
+<br>
+<br>
+
+<!--Bài 9-->
+<label for="num2">Bài 9</label><br>
+<input type="text" id="num2" placeholder="Nhập vị trí phần tử cần tìm">
+<button type="button" onclick="searchNumber(this.value)">Click</button>
+<br>
+<p>b [3,2,4,1,5,"hello","chuối"]</p>
+<p>b [<span id="numorword1"></span>]</p>
+
+
+</body>
+</html>
